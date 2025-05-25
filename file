@@ -1,0 +1,18 @@
+import time as t
+login=input("Введите логин: ") 
+password=input("Введите пароль: ") 
+if login == "owner" :
+ if password == "212owner212":
+     print("пароль верный открываю файл")
+     t.sleep(1)
+     print("читаю файл")
+     t.sleep(1)
+     print("вывожу на экран файл")
+     F=open('secret.txt', 'r', encoding="utf-8")
+     text = F.read()
+     print(text)
+     F.close()
+ else:
+        print("пароль неверный")
+
+#для путя к файлу сделайте папку закинте ваш формат txt и сам py
